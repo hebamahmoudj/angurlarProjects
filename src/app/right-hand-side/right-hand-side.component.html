@@ -1,0 +1,19 @@
+<p>right-hand-side works!</p>
+
+<div class="media border " style="background-color: rgb(231, 227, 227);width: 100%" >
+                       
+        <div class="media-body text-center">
+                <br> <br>
+          <p>{{rightnews.Name}}</p>
+          <p>{{rightnews.Date}}</p>
+          <img src={{rightnews.Image}}  alt={{rightnews.Image}} style="width:90%">
+          <br><br>
+
+
+       <p [innerHtml]="rightnews.Desc" >{{rightnews.Desc}} </p>    
+     
+        </div>
+      </div>
+     
+
+

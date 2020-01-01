@@ -1,0 +1,10 @@
+.red-color{
+    color: red;
+}
+table thead{
+    background-color: aliceblue;
+    border: 1px solid #cccccc
+}
+table tbody{
+    background-color: #f3ca15ef; 
+}

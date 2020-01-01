@@ -1,0 +1,25 @@
+<h2 class="red-color"> hello from student Html </h2>
+<h2>my name is {{student.firstName}}</h2>
+ <!-- interpolation one way binding  -->
+ <h2>my last name is {{student.lastName}}</h2>
+ <h2>my full name is {{getFullName()}}</h2>
+ <h2>{{3*4}}</h2>
+ <input type="text"  #inputFirstName value="{{student.firstName}}" (keyup.enter)="changeFirstName(inputFirstName.value)">
+ <!-- two way binding -->
+ <input type="text" [(ngModel)]="student.lastName"> 
+ <h2  class="bold" [class.green-color]="student.age<30" [class.red-color]="student.age>30">your age is <input type="number" [(ngModel)]="student.age"></h2>
+ <!-- <h2  class="bold" [ngClass]={'green-color class 1 class2':student.age<=30,'red-color':student>30}</h2>your age is <input type="number" [(ngModel)]="student.age"></h2> -->
+ <h1  *ngIf="student.age>30" class="bold red-color">sorry your age above 30</h1>
+ <h1  [hidden]="student.age<=30" class="bold red-color">sorry your age above 30</h1>
+
+
+ <h1>your age is {{student.age}}</h1>
+
+ <button (click)="changeFirstName(inputFirstName.value)">change firstName</button>
+ <h2>{{students.length}}</h2>
+ <ul>
+     <li *ngFor="let student of students;let i= index">
+     {{i+1}} {{student.firstName}}
+     </li>
+ </ul>
+ 

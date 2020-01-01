@@ -1,0 +1,40 @@
+<!-- <p>todolist works!</p> -->
+<!-- <h2>my last name is {{ title.titlename}}</h2> -->
+<br><br>
+<input style="margin-left:40%" type="text"  #inputFirstName value="{{ title.titlename}}" (keyup.enter)="addCount(inputFirstName.value)">
+<button  (click)="addCount(inputFirstName.value)"  >addtitle</button>
+
+<!-- <button class="btn btn-info">add </button> -->
+<!-- <ul style="list-style-type: none">
+    <li *ngFor="let T of tites;let i= index"  >
+  {{i+1}}:
+     <label    [class.red-color]="T.check">{{T.titlename}}</label><input type="checkbox" (change)="check(T)">
+        </li>
+        
+</ul>
+<button class="btn btn-danger">Delete</button> -->
+
+<br><br>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Number</th>
+                <th>Title</th>
+                <th>status</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let T of tites;let i= index">
+                <td>{{i+1}}</td>
+                <td>{{T.titlename}}</td>
+                <td><input type="checkbox" (change)="check(T)"></td>
+                <td><button (click)="delete(i)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+   
+</div>
+<br>
+<h2 style="text-align: center">Length:{{filtercheck()}}</h2> 

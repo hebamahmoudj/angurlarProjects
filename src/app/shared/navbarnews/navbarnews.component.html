@@ -1,0 +1,22 @@
+
+    
+  <!-- <nav class="navbar navbar-expand-sm bg-secondary navbar-dark navbar-fixed-top">
+      
+      <a class="navbar-brand" href="#"> <pre style="color: white;font-size:30px">   YOURNEWS      </pre></a>
+    
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+     
+      <div class="collapse navbar-collapse navbar-fixed-top" id="collapsibleNavbar">
+        <ul class="navbar-nav" *ngFor="let new of newsdata">
+          <li class="nav-item" >
+            <a class="nav-link" routerLinkActive="active" routerLink="/News/Department/{{new.ID}}" style="font-size:20px">{{new.Name}}</a>
+          </li>
+        
+        </ul>
+      </div> 
+    </nav> -->
+    <navbarshared [navnews]="newsdata"></navbarshared>

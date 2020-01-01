@@ -1,0 +1,19 @@
+
+<ul *ngFor="let deptnews of  newsdeparment" style="list-style-type: none">
+    <li class="m-l-5">
+            <div class="media border " style="background-color: rgb(231, 227, 227);width: 100%" >
+        
+                    <div class="media-body text-center">
+                            <br> <br>
+                      <p>{{  deptnews.Name}}</p>
+                      <p>{{  deptnews.Date}}</p>
+                   <!-- <h2>{{deptnews.ImagePath}}</h2>
+                   <h2>{{deptnews.Image}}</h2> -->
+                    <img src = {{deptnews.Image}}  style="width: 90%"/>
+                   <br><br><br>
+                  
+                 
+                    </div>
+                  </div>
+    </li>
+</ul>
